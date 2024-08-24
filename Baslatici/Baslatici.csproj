@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>warnings</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <FileVersion>1.0</FileVersion>
+    <AssemblyVersion>1.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HazirKod_Cdiyez\Ekranlar\**" />
+    <EmbeddedResource Remove="HazirKod_Cdiyez\Ekranlar\**" />
+    <None Remove="HazirKod_Cdiyez\Ekranlar\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="HazirKod_Cdiyez\Ayarlar.cs" />
+    <Compile Remove="HazirKod_Cdiyez\Deneysel.cs" />
+    <Compile Remove="HazirKod_Cdiyez\DonanımHaberleşmesi_KomutSatırıUygulaması.cs" />
+    <Compile Remove="HazirKod_Cdiyez\DonanımHaberleşmesi_SeriPort.cs" />
+    <Compile Remove="HazirKod_Cdiyez\DonanımHaberleşmesi_Tcp.cs" />
+    <Compile Remove="HazirKod_Cdiyez\DurumBildirimi.cs" />
+    <Compile Remove="HazirKod_Cdiyez\KayitDefteri.cs" />
+    <Compile Remove="HazirKod_Cdiyez\KelimeTamamlayici.cs" />
+    <Compile Remove="HazirKod_Cdiyez\KlavyeFareGozlemcisi.cs" />
+    <Compile Remove="HazirKod_Cdiyez\KodKümesi.cs" />
+    <Compile Remove="HazirKod_Cdiyez\PencereVeTepsiIkonuKontrolu.cs" />
+    <Compile Remove="HazirKod_Cdiyez\Sıkıştırma.cs" />
+    <Compile Remove="HazirKod_Cdiyez\UygulamaBostaBekliyor.cs" />
+    <Compile Remove="HazirKod_Cdiyez\UygulamaOncedenCalistirildiMi.cs" />
+    <Compile Remove="HazirKod_Cdiyez\YanUygulama.cs" />
+    <Compile Remove="HazirKod_Cdiyez\YeniYazılımKontrolü.cs" />
+  </ItemGroup>
+
+</Project>
